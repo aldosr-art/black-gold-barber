@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+<title>Black Gold Barber Shop</title>
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #080808;
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    color: #d4af37;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.hero {
+    background:
+      linear-gradient(#0009, #0009),
+      url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1')
+      center/cover;
+    min-height: 440px;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 6vw, 55px);
+    color: #d4af37;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #d4af37;
+    color: #111;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #d4af37;
+}
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.tarjeta {
+    background: #1c1c1c;
+    padding: 25px;
+    border-radius: 15px;
+    width: 280px;
+    border: 1px solid #d4af37;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #d4af3733;
+}
+
+
+.precio {
+    color: #d4af37;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.galeria img {
+    width: 280px;
+    max-width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    background: #080808;
+    padding: 25px;
+    text-align: center;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* Evitar que la página se desborde */
+body {
+    overflow-x: hidden;
+}
+
+/* Imágenes de los servicios */
+.tarjeta img {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Imágenes de la galería */
+.galeria img {
+    width: 280px;
+    max-width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .galeria img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>BLACK GOLD BARBER SHOP</h2>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<div class="hero" id="inicio">
+    <h1>ESTILO Y ELEGANCIA</h1>
+    <p>Tu mejor versión comienza aquí.</p>
+    <a href="#servicios" class="boton">
+        Ver nuestros servicios
+    </a>
+</div>
+
+<section id="servicios">
+    <h2>Nuestros servicios</h2>
+    <p>Calidad y estilo en cada corte.</p>
+
+    <div class="servicios">
+        <div class="tarjeta">
+            <h3>✂️ Corte clásico</h3>
+            <img src="imagenes/clasico.jpg"
+            alt="Ejemplo de corte clásico">
+            <p>Un estilo elegante y tradicional.</p>
+            <p class="precio">$5.00</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>💈 Degradado moderno</h3>
+            <img src="imagenes/degradado.jpg"
+            alt="Ejemplo de degradado moderno">
+            <p>Un corte moderno y detallado.</p>
+            <p class="precio">$7.00</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>🪒 Arreglo de barba</h3>
+            <img src="imagenes/barba.jpg"
+            alt="Ejemplo de arreglo de barba">
+            <p>Perfilado y cuidado de barba.</p>
+            <p class="precio">$4.00</p>
+        </div>
+    </div>
+</section>
+
+<section id="galeria">
+    <h2>Nuestros trabajos</h2>
+    <p>Algunos estilos de referencia.</p>
+
+    <div class="galeria">
+        <img
+          src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a"
+          alt="Trabajo de barbería de referencia">
+        <img
+          src="https://images.unsplash.com/photo-1621605815971-fbc98d665033"
+          alt="Herramientas de barbería">
+    </div>
+</section>
+
+<section id="nosotros">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+        En Black Gold Barber Shop ofrecemos
+        una experiencia moderna, combinando
+        estilo, calidad y atención personalizada.
+    </p>
+</section>
+
+<section id="contacto">
+    <h2>Reserva tu cita</h2>
+    <p>Contáctanos para consultar horarios.</p>
+    
+    <a class="boton"
+        href="https://wa.me/593999999999?text=Hola%2C%20quisiera%20consultar%20una%20cita"
+        target="_blank"
+        rel="noopener noreferrer">
+         💬 Consultar una cita
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 Black Gold Barber Shop</p>
+    <p>Proyecto de demostración</p>
+</footer>
+
+</body>
+</html>
